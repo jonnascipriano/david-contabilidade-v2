@@ -41,3 +41,18 @@
     font-family: "Race Track Regular";
     src: url(../components/fonts/racetrack-regular.otf);
 }
+
+@font-face {
+    font-family: "Caviar Dream";
+    src: url(../components/fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: "Dream Orphans It";
+    src: url(../components/fonts/dream-orphans-it.otf);
+}
+
+@font-face {
+    font-family: "Built Titling Bd it";
+    src: url(../components/fonts/built\ titling\ bd\ it.otf);
+}
