@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: azonix;
+    src: url(../components/fonts/azonix.otf) format(otf);
+}
+
+/*
+@font-face {
+    font-family: "Dolce Vita Light";
+    src: url(../components/fonts/dolce-vita-light.ttf) format(ttf);
+}*/
+
+
+@font-face {
+    font-family: explore;
+    src: url(../components/fonts/explore-everyday.ttf);
+}
+/*
+@font-face {
+    font-family: florensa;
+    src: url(../components/fonts/florensa.ttf) format(ttf);
+}*/
+
+@font-face {
+    font-family: "Geosans Light Oblique";
+    src: url(../components/fonts/geosans-light-oblique.ttf);
+}
+
+@font-face {
+    font-family: "Geosans Light";
+    src: url(../components/fonts/geosans-light.ttf);
+}
+
+@font-face {
+    font-family: "Qualy Bold";
+    src: url(../components/fonts/qualy-bold.ttf);
+}
+
+@font-face {
+    font-family: "Race Track Regular";
+    src: url(../components/fonts/racetrack-regular.otf);
+}

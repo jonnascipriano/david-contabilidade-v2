@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor1: #0D0058;
+    --cor2: #00D7EB;
+    --cor3: #BB6400;
+    --cor4: #FAF3DD;
+    --cor5: #250000;
+}
+
+
+p{
+    font-family: "Dolce Vita Heavy Bold";
+}
