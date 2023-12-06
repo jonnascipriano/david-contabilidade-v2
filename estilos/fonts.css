@@ -53,6 +53,11 @@
 }
 
 @font-face {
+    font-family: "Dream Orphans";
+    src: url(../components/fonts/Dream\ Orphans\ Bd\ It.otf);
+}
+
+@font-face {
     font-family: "Built Titling Bd it";
-    src: url(../components/fonts/built\ titling\ bd\ it.otf);
+    src: url(../components/fonts/built\ titling\ el.otf);
 }
