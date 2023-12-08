@@ -1,9 +1,17 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor1);
 }
 
 :root{
+    --color-header-nav: #fdfdfd60;
+    --color-header-nav-letter: #ff0000;
+
     --cor1: #080031;
     --cor2: #00D7EB;
     --cor3: #BB6400;
@@ -11,7 +19,7 @@
     --cor5: #250000;
     --cor6: #FFF;
 
-    --font-titulos: "Dream Orphans It";
+    --font-titulos: "Agenor Neue Regular";
 
 }
 
@@ -24,42 +32,90 @@ h1, h2{
     font-family: var(--font-titulos);
 }
 
+
+/***************************************************************/
+                /*COMEÇO DO HEADER*/
+/***************************************************************/
+
 header{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: var(--cor4);
-    color: var(--cor1);
+    background: var(--cor6);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 20px;
+    color: var(--color-header-nav-letter);
 }
+
+/************* NAVEGAÇÃO *************/
 
 header ul{
     display: flex;
-    list-style-type: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 30px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding: 0px;
+
+    font-family: "Agenor Neue Regular";
 }
 
-header li{
-    padding: 10px;
-    font-family: "Dream Orphans";
-
+header ul#nav li{
+    border-bottom: 1px solid var(--cor1);
+    transition: border-bottom .2s;
+    transition-timing-function: linear;
 }
+
+header ul#nav li:hover{
+    border-bottom: 5px solid var(--cor1);
+}
+
+
+header ul li{
+    display: flex;
+}
+
+header ul#fale-comigo a{
+    padding: 15px 30px;
+    font-size: 1.4em;
+    background-color: var(--cor1);
+    border-radius: 10px;
+    font-size: 1.7em;
+    color: var(--cor6);
+    box-shadow: 0px 0px 10px 0px var(--cor1);
+}
+
+
 
 header ul li a{
-    text-decoration: none;
     color: var(--cor1);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    transition: .6s;
+    border-radius: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.384);
 }
 
-header ul li a#fale-comigo{
-    color: var(--cor2);
-    background-color: var(--cor1);
-    padding: 20px 40px;
-    border: 1px solid var(--cor2);
-    border-radius: 10px;
+header ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.151);
+    transform: translate(-2px, -2px);
+    color: var(--cor1);
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.705);
 }
+
+
+
+
+
+
+/***************************************************************/
+                /*COMEÇO DO MAIN*/
+/***************************************************************/
 
 main{
     background-color: var(--cor1);
@@ -68,8 +124,14 @@ main{
 
 main section#str{
     width: 100%;
-    height: 300px;
+    height: 400px;
+    box-shadow: 0px 0px 10px 1px black;
     position: relative;
+    background-image: url(../components/imagens/background-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 main section#str h1{
@@ -77,6 +139,8 @@ main section#str h1{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #080031;
+    padding: 40px;
 }
 
 main section#bpo{
