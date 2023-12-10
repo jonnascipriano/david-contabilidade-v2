@@ -346,17 +346,20 @@ main section#bpo ul{
 footer{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
     min-height: 50vh;
     color: var(--cor6);
 
-    padding: 50px 0;
+    padding-top: 50px;
 }
 
 footer div#footer-top{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
+
 }
 
 footer div#redes-sociais{
@@ -393,7 +396,9 @@ footer div#creditos{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 50px;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: var(--cor5);
 }
 
 footer div#creditos a{
