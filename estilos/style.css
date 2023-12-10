@@ -79,14 +79,18 @@ header ul li{
     display: flex;
 }
 
-header ul#fale-comigo a{
+header ul#fale-comigo li a{
     padding: 15px 30px;
     font-size: 1.4em;
     background-color: var(--cor1);
     border-radius: 10px;
     font-size: 1.7em;
     color: var(--cor6);
-    box-shadow: 0px 0px 10px 0px var(--cor1);
+    box-shadow: 2px 2px 5px 0px var(--cor3);
+}
+
+header ul#fale-comigo li a:hover{
+    box-shadow: 2px 2px 10px 2px var(--cor3);
 }
 
 
@@ -122,12 +126,23 @@ main{
     color: var(--cor6);
 }
 
+/************************** SECTION STR ***************************/
+
 main section#str{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    color: var(--cor1);
+
     width: 100%;
-    height: 400px;
+    height: 550px;
     box-shadow: 0px 0px 10px 1px black;
-    position: relative;
-    background-image: url(../components/imagens/background-2.jpg);
+
+
+    background-image: url(../components/imagens/background-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -135,13 +150,107 @@ main section#str{
 }
 
 main section#str h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #080031;
-    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.712);
+    padding: 20px;
+
+    border-radius: 4px;
+
+    box-shadow: 0px 0px 5px black;
+
+    font-size: 1.7em;
 }
+
+main section#str form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 20px;
+    min-width: 30%;
+
+    background-color: var(--cor1);
+    color: var(--cor6);
+    border: 1px solid white;
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 10px 2px black;
+}
+
+main section#str form div#newslat{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 50px;
+
+    font-size: 1.4em;
+}
+
+main section#str form div#email-newslat label,
+main section#str form div#tel-newslat label{
+    display: flex;
+
+    font-family: Lemon Milk Regular;
+    font-size: 1em;
+}
+
+main section#str form div#email-newslat input,
+main section#str form div#tel-newslat input{
+    width: 100%;
+    padding: 10px 0;
+    padding-left: 5px;
+    box-shadow: 0px 0px 4px 0px white;
+    margin-bottom: 15px;
+
+    background-color: var(--cor3);
+    color: var(--cor4);
+
+    border: 1px solid white;
+    border-radius: 2px;
+
+    font-size: 1em;
+}
+
+main section#str form div#email-newslat input::placeholder,
+main section#str form div#tel-newslat input::placeholder{
+    color: var(--cor4);
+}
+
+main section#str form div#submit-cadastro input{
+    width: 100%;
+
+    margin-top: 20px;
+    padding: 10px 0;
+
+    background-color: var(--cor6);
+    color: var(--cor1);
+
+    border: 1px solid var(--cor6);
+    border-radius: 5px;
+
+    font-size: 1.4em;
+    font-family: "Lemon Milk Regular";
+    font-weight: bold;
+
+    transition: .5s;
+
+    cursor: pointer;
+}
+
+main section#str form div#submit-cadastro input:hover{
+    transform: translate(-2px, -2px);
+    box-shadow: 0px 0px 10px 0px var(--cor3);
+
+    background-color: var(--cor6);
+    color: var(--cor3);
+
+}
+
+
+
 
 main section#bpo{
     display: flex;
@@ -149,7 +258,6 @@ main section#bpo{
     justify-content: center;
     align-items: center;
     padding: 80px;
-    width: 80%;
     margin: auto;
     background-color: var(--cor6);
     color: var(--cor1);
