@@ -10,11 +10,10 @@ body{
 
 :root{
     --color-header-nav: #fdfdfd60;
-    --color-header-nav-letter: #ff0000;
 
     --cor1: #080031;
     --cor2: #00D7EB;
-    --cor3: #BB6400;
+    --cor3: #28F09E;
     --cor4: #FAF3DD;
     --cor5: #250000;
     --cor6: #FFF;
@@ -47,8 +46,41 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 20px;
-    color: var(--color-header-nav-letter);
+    padding: 10px;
+    color: var(--cor1);
+}
+/* 
+header div#logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header div#logo div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header div#logo div h1{
+    font-size: 1.7em;
+}
+
+header div#logo div p{
+    font-size: .6em;
+    font-weight: bold;
+} */
+
+header div#logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+header div#logo div{
+    display: flex;
+    flex-direction: column;
 }
 
 /************* NAVEGAÇÃO *************/
@@ -62,38 +94,26 @@ header ul{
     padding: 0px;
 
     font-family: "Agenor Neue Regular";
+
+    box-sizing: border-box;
 }
 
-header ul#nav li{
-    border-bottom: 1px solid var(--cor1);
-    transition: border-bottom .2s;
-    transition-timing-function: linear;
-}
 
-header ul#nav li:hover{
-    border-bottom: 5px solid var(--cor1);
-}
 
 
 header ul li{
     display: flex;
 }
 
-header ul#fale-comigo li a{
-    padding: 15px 30px;
-    font-size: 1.4em;
-    background-color: var(--cor1);
-    border-radius: 10px;
-    font-size: 1.7em;
-    color: var(--cor6);
-    box-shadow: 2px 2px 5px 0px var(--cor3);
+header ul#nav li{
+    border-bottom: 2px solid var(--cor1);
+    transition: border-bottom .2s;
+    transition-timing-function: linear;
 }
 
-header ul#fale-comigo li a:hover{
-    box-shadow: 2px 2px 10px 2px var(--cor3);
+header ul#nav li:hover{
+    border-bottom: 2px solid var(--cor3);
 }
-
-
 
 header ul li a{
     color: var(--cor1);
@@ -102,7 +122,7 @@ header ul li a{
     margin: 5px;
     transition: .6s;
     border-radius: 10px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.384);
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.384);
 }
 
 header ul li a:hover{
@@ -111,6 +131,25 @@ header ul li a:hover{
     color: var(--cor1);
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.705);
 }
+
+
+
+header ul#fale-comigo li a{
+    padding: 15px 30px;
+    font-size: 1.4em;
+    background-color: var(--cor1);
+    border-radius: 10px;
+    font-size: 1.7em;
+    color: var(--cor6);
+    box-shadow: 2px 2px 5px 0px var(--cor5);
+}
+
+header ul#fale-comigo li a:hover{
+    box-shadow: 2px 2px 10px 2px var(--cor5);
+    color: var(--cor3);
+}
+
+
 
 
 
@@ -138,15 +177,14 @@ main section#str{
     color: var(--cor1);
 
     width: 100%;
-    height: 550px;
+    height: 83.2vh;
     box-shadow: 0px 0px 10px 1px black;
 
 
-    background-image: url(../components/imagens/background-1.jpg);
-    background-position: center;
+    background-image: url("../components/imagens/background-5-notebook.png");
+    background-position:center 70%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 main section#str h1{
@@ -189,6 +227,31 @@ main section#str form div#newslat{
     font-size: 1.4em;
 }
 
+main section#str form div#nome-sobrenome{
+    display: flex;
+    gap: 10px;
+}
+
+main section#str form div#nome-sobrenome input{
+    padding: 10px 0;
+    padding-left: 5px;
+    box-shadow: 0px 0px 4px 0px white;
+    margin-bottom: 15px;
+
+    background-color: var(--cor3);
+    color: var(--cor1);
+
+    border: 1px solid white;
+    border-radius: 2px;
+
+    font-size: 1em;
+
+}
+
+main section#str form div#nome-sobrenome input::placeholder{
+    color: var(--cor1);
+}
+
 main section#str form div#email-newslat label,
 main section#str form div#tel-newslat label{
     display: flex;
@@ -206,7 +269,7 @@ main section#str form div#tel-newslat input{
     margin-bottom: 15px;
 
     background-color: var(--cor3);
-    color: var(--cor4);
+    color: var(--cor1);
 
     border: 1px solid white;
     border-radius: 2px;
@@ -216,7 +279,7 @@ main section#str form div#tel-newslat input{
 
 main section#str form div#email-newslat input::placeholder,
 main section#str form div#tel-newslat input::placeholder{
-    color: var(--cor4);
+    color: var(--cor1);
 }
 
 main section#str form div#submit-cadastro input{
@@ -271,4 +334,68 @@ main section#bpo h2{
 
 main section#bpo ul{
     list-style-position: inside;
+}
+
+
+
+
+/***************************************************************/
+                /*COMEÇO DO FOOTER*/
+/***************************************************************/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 50vh;
+    color: var(--cor6);
+
+    padding: 50px 0;
+}
+
+footer div#footer-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer div#redes-sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer div#redes-sociais ul{
+    list-style: none;
+}
+
+footer div#redes-sociais ul li{
+    padding: 15px 0;
+}
+
+footer div#redes-sociais ul li a{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+    text-decoration: none;
+    color: var(--cor6);
+}
+
+footer div#redes-sociais ul li a:hover{
+    text-decoration: underline;
+}
+
+footer div#redes-sociais img{
+    width: 20px;
+}
+
+footer div#creditos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+footer div#creditos a{
+    color: var(--cor6);
 }

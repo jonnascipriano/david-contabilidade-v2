@@ -13,8 +13,12 @@
 
     <header>
 
-        <div>
-            <img src="components/imagens/logo.png" alt="Logo David Contabilidade" width="220px">
+        <div id="logo">
+            <img src="components/imagens/only-icon.png" alt="Logo David Contabilidade" width="195px">
+            <div>
+                <h1>DAVID LOIOLA</h1>
+                <p>CONTABILIDADE E APOIO ADMINISTRATIVO</p>
+            </div>
         </div>
 
         <ul id="nav">
@@ -46,15 +50,17 @@
                     <p>Receba dicas e muito mais</p>
                 </div>
 
+                <div id="nome-sobrenome">
+                    <input type="text" name="nome" id="nome-cadastro" placeholder="Nome">
+                    <input type="text" name="sobrenome" id="sobrenome-cadastro" placeholder="Sobrenome">
+                </div>
 
                 <div id="email-newslat">
-                    <label for="email-inscreva-se">Email</label>
                     <input type="email" name="email" id="email-inscreva-se" placeholder="Digite seu email" required>
                 </div>
 
                 <div id="tel-newslat">
-                    <label for="numero-inscreva-se">Telefone</label>
-                    <input type="tel" name="numero" id="numero-inscreva-se" placeholder="(xx) xxxxx-xxxx" required maxlength="11">
+                    <input type="tel" name="numero" id="numero-inscreva-se" placeholder="(xx) xxxxx-xxxx" required maxlength="11" max="11">
                 </div>
 
                 <div id="submit-cadastro">
@@ -120,6 +126,36 @@
     <!-------- COMEÇO DO FOOTER -------->
 
     <footer>
+        <div id="footer-top">
+        
+            <div>
+                <img src="components/imagens/only-icon.png" alt="Logo David Contabilidade" width="195px">
+                <div>
+                    <h1>DAVID LOIOLA</h1>
+                    <p>CONTABILIDADE E APOIO ADMINISTRATIVO</p>
+                </div>
+            </div>
+            <div id="redes-sociais">
+                <h1>Entre em contato</h1>
+                <ul>
+                    <li>
+                        <p>Instagram</p>
+                        <a href="https://www.instagram.com/davidloiola.cont/"><img src="components/icons/instagram.png" alt="instagram">&nbsp;&nbsp;instagram.com/davidloiola.cont</a>
+                    </li>
+                    <li>
+                        <p>Email</p>
+                        <a href="mailto:davidploiola@outlook.com"><img src="components/icons/o-email.png" alt="email">&nbsp;&nbsp;davidploiola@outlook.com</a>
+                    </li>
+                    <li>
+                        <p>Whatsapp</p>
+                        <a href="https://wa.me/message/ELGWTPAYGTWRC1"><img src="components/icons/whatsapp.png" alt="whatsapp">&nbsp;&nbsp;(88) 99300-2849</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="creditos">
+            <p>&copy; 2023 David Loiola - Criado por <a href="">Jonnas Cipriano</a></p>
+        </div>
 
     </footer>
 
